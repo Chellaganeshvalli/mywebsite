@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chella Profile</title>
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+</head>
+
+<body>
+    <br>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card card-body h=100 border-info" id="profile-wrapper">
+                <img id="profile-pic" src="{% static 'images/Chellapic.jpg' %}">
+                <hr>
+                <h4>Hi I'm Chella</h4>
+                <p style="font-size:12px;">CHELLA88.SUBRAMANI@GMAIL.COM</p>
+                <p>8754777852</p>
+            </div>
+        </div>
+         <div class="col-md-9">
+            <div class="card card-body h=100 border-info">
+             <h4>My first Job as a developer</h4>
+             <hr>
+             <p>I was trained in python for 3 months then am writing my first hello world program.
+                 Then i learnt Django framework for 3months. Now i'm able to develop a website
+                 using this framework.</p></div>
+        </div>
+    </div>
+        <br>
+        <div class="row">
+        <div class="col-md-6">
+            <div class="card card-body">
+                <h4>My Experience as a Developer</h4>
+                <hr>
+                <p>Python developer at atman Technologies </p>
+                <p>Strong in core python</p>
+            </div>
+        </div>
+         <div class="col-md-6">
+            <div class="card card-body">
+                <h4>What I know</h4>
+                <hr>
+                <p>Python,Django,HTMl/CSS,Javascript,Mysql,Sqlite3</p>
+            </div>
+        </div>
+    </div>
+        <br>
+        <div class="row">
+        <div class="col-md-6">
+            <div class="card card-body">
+                <h4>How I learn</h4>
+                <hr>
+                <p>I learnt through DVS Technologies & udemy</p>
+                <p>I can learn just about anything by having a final product to tear a part piece by piece.
+                    I break the code where I need to figure out why things work the way they do.
+                    Documentation is just a reference</p>
+            </div>
+        </div>
+         <div class="col-md-6">
+            <div class="card card-body">
+                <h4>My short Term Goal</h4>
+                <hr>
+                <p>After almost one year of supporting my system at the company I'm ready to learn something new.
+                I'll collaborate and share my experience with others.</p>
+                <p>Apart from building small projects I would like to enter into a position where
+                    I can be a part a bigger teams & learn from the people who have more experience than myself.</p>
+                <a href="{{object.chellaresume.url}}" target="_blank"><button type="button" class="text-center btn-lg" style="color:blue;">
+                    Download CV
+                </button> </a> </p>
+            </div>
+        </div>
+    </div>
+        <br>
+    </div>
+
+</body>
+</html>
+
+<!---->
+<!--<h3> Hello WORLD!!</h3>-->
